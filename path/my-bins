@@ -1,0 +1,6 @@
+###########################################
+# Copy this file to /etc/paths.d.
+# NOTE:
+#  CANNOT symlink to this file.
+###########################################
+~/dotfiles/bin
