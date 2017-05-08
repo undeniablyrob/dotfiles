@@ -40,6 +40,7 @@ killport () {
 	lsof -i tcp:$port | awk 'NR!=1 {print $2}' | xargs kill
 }
 
+alias curljson='curl -H "Content-Type: application/json"'
 
 #---------- iCloud ----------------------
 export ICLOUD='~/Library/Mobile\ Documents/com~apple~CloudDocs/'
