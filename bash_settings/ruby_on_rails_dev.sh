@@ -2,7 +2,7 @@
 alias be="bundle exec"
 alias parl=parallel_rake_spec
 
-parallel_spec () {
+parallel_rake_spec () {
   local path=$1
   local formatter=$2
   local number_of_threads=$3
