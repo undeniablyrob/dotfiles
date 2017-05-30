@@ -1,3 +1,5 @@
+# Ignore settings for the DOTFILES repository.
+# Not to be confused with files in the 'git-stuff' folder
 bash_settings/salesloft*
 bin/ngrok
 bin/with_aws_credentials
