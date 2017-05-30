@@ -1,11 +1,6 @@
 #---------- Bash Settings ------------------
 export MY_DOTFILES_FOLDER='~/dotfiles'
-export BASH_SETTINGS_FOLDER="$MY_DOTFILES_FOLDER/bash_settings"
-alias cdbash="cd $BASH_SETTINGS_FOLDER"
-editbashsetting () { 
-	local fileName=$1;
-	vim "$BASH_SETTINGS_FOLDER/$fileName.sh"
-}
+alias cdsettings="cd $MY_DOTFILES_FOLDER"
 alias editbash='vi ~/.bash_profile'
 alias reloadbash='source ~/.bash_profile'
 
