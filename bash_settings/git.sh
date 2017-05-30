@@ -2,6 +2,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gb='git branch'
 alias gcm='git checkout master'
+alias gl='git lg'
+alias gml='git mylg'
 
 gitfiles () {
   local commit_hash=$1;
