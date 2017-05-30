@@ -21,6 +21,10 @@ mkcd () {
 alias hiddenfiles='ls -a | grep "^\."'
 alias listpaths="echo $PATH | tr ':' '\n'"
 
+alias curljson='curl -H "Content-Type: application/json"'
+
+
+#---------- Ports / Network ----------------------
 portopen () {
 	local port=$1
 	if lsof -Pi :$port -sTCP:LISTEN -t >/dev/null ; then
@@ -35,7 +39,6 @@ killport () {
 	lsof -i tcp:$port | awk 'NR!=1 {print $2}' | xargs kill
 }
 
-alias curljson='curl -H "Content-Type: application/json"'
 
 #---------- iCloud ----------------------
 export ICLOUD='~/Library/Mobile\ Documents/com~apple~CloudDocs/'
