@@ -6,9 +6,13 @@ helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
 excludesfile = /opt/boxen/config/git/gitignore
+
 [user]
     name = Rob Wilson
     email = rob.wilson@salesloft.com
+
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    conflicts = diff --name-only --diff-filter=Us
+    conflicts = diff --name-only --diff-filter=U
+    mylog = !git log --author="$(git config user.email)"
+    mylg = !git lg --author="$(git config user.email)"
