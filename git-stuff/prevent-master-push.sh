@@ -1,8 +1,11 @@
 ###############################################################
 # TO USE:
 #
-# Copy or symlink to:
-#     [your-repo]/.git/hooks/
+# Add a file named "pre-push" in:
+#   [your-repo]/.git/hooks
+#
+# Load this script in your pre-push file, i.e,.
+#   source /path/to/prevent-master-push.sh
 #
 ###############################################################
 
