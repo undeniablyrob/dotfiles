@@ -6,12 +6,14 @@ alias reloadbash='source ~/.bash_profile'
 
 
 #---------- General ------------------
-trashme () { 
+trashme () {
 	local folderToDelete=$1
 	printf "Moving to trash: $folderToDelete..."
 	mv $folderToDelete ~/.Trash
 	echo ".done."
 }
+
+alias resetcamera="sudo Killall VDCAssistant"
 
 alias adios=exit
 alias cl=clear
