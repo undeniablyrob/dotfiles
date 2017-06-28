@@ -1,4 +1,5 @@
 #---------- Bash Settings ------------------
+export CLICOLOR=1
 export MY_DOTFILES_FOLDER='~/dotfiles'
 alias cdsettings="cd $MY_DOTFILES_FOLDER"
 alias editbash='vi ~/.bash_profile'
