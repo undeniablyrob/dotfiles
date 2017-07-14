@@ -9,6 +9,7 @@ set hlsearch           " highlight matches
 set foldenable
 set foldlevelstart=10  " open most folds by default (0=everything folded, 99=nothing folded)
 set foldmethod=indent  " fold based on indentation
+set backspace=indent,eol,start " fixes inability to backspace https://stackoverflow.com/questions/3534028
 
 " ---------------- Mappings ---------
 nnoremap B ^
