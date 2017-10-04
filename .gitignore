@@ -3,3 +3,4 @@
 bash_settings/salesloft*
 bin/ngrok
 bin/with_aws_credentials
+ssh/config
