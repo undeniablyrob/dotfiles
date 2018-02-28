@@ -1,0 +1,17 @@
+#!/bin/sh
+#!/usr/local/bin
+source_directory='/Users/robwilson/src/foo'
+output_directory='/Users/robwilson/backup/foo_development'
+database_connection='foo_development -h 0.0.0.0 -p 15432 -U postgres'
+
+timestamp=`date +%Y-%m-%d-%H:%M:%S`
+filename="${output_directory}/${timestamp}_pg.bak"
+
+echo "Backing up postgres from ${source_directory}."
+cd ${source_directory} && /usr/local/bin/pg_dump --data-only ${database_connection} > "${filename}"
+
+if [ $? -eq 0 ]; then
+  echo "Backup created successfully at ${filename}."
+else
+  echo "******* Backup failed at ${timestamp}."
+fi
