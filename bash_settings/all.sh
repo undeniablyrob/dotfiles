@@ -25,6 +25,7 @@ alias hiddenfiles='ls -a | grep "^\."'
 alias listpaths="echo $PATH | tr ':' '\n'"
 
 alias curljson='curl -H "Content-Type: application/json"'
+alias jsondecode='pbpaste | base64 -D -i - | jq'
 
 
 #---------- Ports / Network ----------------------
