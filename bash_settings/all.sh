@@ -5,6 +5,10 @@ alias cdsettings="cd $MY_DOTFILES_FOLDER"
 alias editbash='vi ~/.bash_profile'
 alias reloadbash='source ~/.bash_profile'
 
+# See https://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+
 
 #---------- General ------------------
 trashme () {
