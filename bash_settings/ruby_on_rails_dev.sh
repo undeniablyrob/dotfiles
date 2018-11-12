@@ -1,5 +1,6 @@
 #------------- Ruby/Rails ---------------
 alias be="bundle exec"
+alias befs="bundle exec foreman start"
 alias parl=parallel_rake_spec
 
 parallel_rake_spec () {
