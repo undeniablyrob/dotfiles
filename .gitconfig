@@ -1,12 +1,6 @@
 [hub]
 protocol = https
 
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
-
-[core]
-excludesfile = /opt/boxen/config/git/gitignore
-
 [user]
     name = Rob Wilson
     email = rob.wilson@salesloft.com
