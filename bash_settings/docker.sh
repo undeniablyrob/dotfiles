@@ -17,3 +17,7 @@ alias di="docker image"
 # shell into a pod by doing `de {first_three letters of sha}`
 docker_exec(){ docker exec -ti $(docker ps | grep $1 |cut -d' ' -f 1) bash; }
 alias de='docker_exec'
+
+# kubernetes
+alias kc=kubectl
+alias kce='kubectl exec -it'
