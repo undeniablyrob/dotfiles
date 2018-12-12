@@ -54,9 +54,6 @@ alias cdicloud="cd $ICLOUD"
 
 
 #---------- Visual Studio Code ------------------
-code () {
-	VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*
-}
 alias codesettings="code $MY_DOTFILES_FOLDER"
 
 #---------- Bash Completion ---------------------
