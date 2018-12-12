@@ -7,7 +7,7 @@ alias reloadbash='source ~/.bash_profile'
 
 # See https://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 bind "set completion-ignore-case on"
-bind "set show-all-if-ambiguous on"
+# bind "set show-all-if-ambiguous on"
 
 
 #---------- General ------------------
@@ -58,3 +58,6 @@ code () {
 	VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*
 }
 alias codesettings="code $MY_DOTFILES_FOLDER"
+
+#---------- Bash Completion ---------------------
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
