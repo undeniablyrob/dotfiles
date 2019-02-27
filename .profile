@@ -1,5 +1,5 @@
 # Source all .sh files
-for file in ~/dotfiles/bash_settings/*.sh; do
+for file in ~/src/dotfiles/bash_settings/*.sh; do
 	source "$file"
 done
 
