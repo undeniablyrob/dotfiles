@@ -3,19 +3,20 @@ protocol = https
 
 [user]
     name = Rob Wilson
-	email = r.wilson@calendly.com
+    email = r.wilson@calendly.com
 
 [alias]
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    conflicts = diff --name-only --diff-filter=U
+    logv = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     mylog = !git log --author="$(git config user.email)"
-    mylg = !git lg --author="$(git config user.email)"
+    mylogv = !git logv --author="$(git config user.email)"
+    conflicts = diff --name-only --diff-filter=U
     diffc = diff --cached
     co = checkout
     st = status
+    tagsv = !git tag -l --format='%(refname)   %(creatordate)'
 
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
