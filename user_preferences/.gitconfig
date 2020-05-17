@@ -1,9 +1,12 @@
 [hub]
-protocol = https
+    protocol = https
 
 [user]
     name = Rob Wilson
     email = rwilson513@gmail.com
+
+[credentials]
+    helper = keychain
 
 [alias]
     logv = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
