@@ -1,8 +1,8 @@
 # Dot Files
 
 ## Initial Setup
-1. Create sym link for `.vimrc` in `~/`.
-1. Create sym link for `.gitconfig` in `~`.
+1. Create sym link for user preferences: `ln -s $HOME/src/dotfiles/user_preferences/.* $HOME/`.
+    - You may have to manually remove .gitconfig or .vimrc if it already exists.
 
 ## Zsh Setup
 1. Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh).

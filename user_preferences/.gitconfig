@@ -3,7 +3,7 @@ protocol = https
 
 [user]
     name = Rob Wilson
-    email = r.wilson@calendly.com
+    email = rwilson513@gmail.com
 
 [alias]
     logv = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
