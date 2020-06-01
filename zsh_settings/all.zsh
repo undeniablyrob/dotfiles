@@ -5,6 +5,7 @@ mkcd () {
 }
 alias hiddenfiles='ls -a | grep "^\."'
 alias listpaths="echo $PATH | tr ':' '\n'"
+alias startssh='echo "[TIP] RUN: ssh-agent && ssh-add ~/.ssh/id_rsa"'
 
 #---------- Ports / Network ----------------------
 portopen () {
